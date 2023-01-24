@@ -5,12 +5,7 @@ from flask_socketio import SocketIO, emit
 from flask_cors import CORS
 import math
 from multiprocessing import Process, Queue
-
 _debug = False
-
-
-# TODO: axis-mapping should be OOP and automatic!
-
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret'
